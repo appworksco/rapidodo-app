@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2024 at 06:48 AM
+-- Generation Time: Jun 01, 2024 at 05:43 PM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- PHP Version: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,6 +36,26 @@ CREATE TABLE `addresses` (
   `landmark` text NOT NULL,
   `nickname` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `municipality_city`
+--
+
+CREATE TABLE `municipality_city` (
+  `id` int(11) NOT NULL,
+  `municipality_city` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `municipality_city`
+--
+
+INSERT INTO `municipality_city` (`id`, `municipality_city`) VALUES
+(1, 'Valencia City'),
+(2, 'Maramag'),
+(3, 'Don Carlos');
 
 -- --------------------------------------------------------
 
@@ -74,6 +94,12 @@ ALTER TABLE `addresses`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `municipality_city`
+--
+ALTER TABLE `municipality_city`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -88,6 +114,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `addresses`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `municipality_city`
+--
+ALTER TABLE `municipality_city`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
