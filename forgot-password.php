@@ -1,8 +1,6 @@
 <?php
 
 include realpath(__DIR__ . '/includes/layout/header.php');
-include(__DIR__ . '/db/connector.php');
-include(__DIR__ . '/includes/models/users-facade.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -58,7 +56,7 @@ if (isset($_POST["send"])) {
             <div class="px-5 col-md-6 ms-auto">
                 <div class="px-5 col-10 mx-auto">
                     <h2>Forgot password</h2>
-                    <p>Enter your email address below and we'll send you an email with instructions on how to change your password</p>
+                    <p>Enter your email address below and we'll send you an email with your rapidodo password.</p>
                     <?php include('errors.php'); ?>
                     <form class="mt-5 mb-4" action="forgot-password" method="post">
                         <div class="form-group">

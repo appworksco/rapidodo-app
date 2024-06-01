@@ -3,7 +3,7 @@
 include realpath(__DIR__ . '/../.././includes/layout/dashboard-header.php');
 
 // Redirect user if user is not logged in
-if ($userId == 0) {
+if (isset($_SESSION["user_id"]) == 0) {
     header('Location: signin');
 }
 

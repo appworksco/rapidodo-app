@@ -13,10 +13,12 @@ $info = array(); // Array to hold info messages
 include(__DIR__ . '/../../db/connector.php');
 include(__DIR__ . '/../../includes/models/users-facade.php');
 include(__DIR__ . '/../../includes/models/addresses-facade.php');
+include(__DIR__ . '/../../includes/models/municipality-city-facade.php');
 
 // Initialize the facade classes
 $usersFacade = new UsersFacade;
 $addressesFacade = new AddressesFacade;
+$municipalityCityFacade = new MunicipalityCityFacade;
 
 $userId = 0; // Set default value for user id
 

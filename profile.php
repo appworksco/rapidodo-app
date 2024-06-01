@@ -3,6 +3,7 @@
 include realpath(__DIR__ . '/includes/layout/header.php');
 
 // Redirect user if user is not logged in
+$userId = 0;
 if ($userId == 0) {
     header('Location: signin');
 }

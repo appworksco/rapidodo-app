@@ -4,7 +4,7 @@
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
             <a href="index" class="text-nowrap logo-img">
-            <img src="../.././dist/img/rapidodo-logo.png" class="img-fluid p-4" alt="Rapidodo Logo">
+                <img src="../.././dist/img/rapidodo-logo.png" class="img-fluid p-4" alt="Rapidodo Logo">
             </a>
             <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                 <i class="ti ti-x fs-8"></i>
@@ -25,12 +25,20 @@
                         <span class="hide-menu">Dashboard</span>
                     </a>
                 </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="merchants" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-layout-dashboard"></i>
+                        </span>
+                        <span class="hide-menu">Merchants</span>
+                    </a>
+                </li>
                 <li class="nav-small-cap">
                     <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                     <span class="hide-menu text-uppercase">Settings</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="municipality_city" aria-expanded="false">
+                    <a class="sidebar-link" href="municipality-city" aria-expanded="false">
                         <span>
                             <i class="ti ti-map"></i>
                         </span>
